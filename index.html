@@ -1,1 +1,63 @@
-<h1>左董、彪神、强总</h1><br><h1>一起来玩啊</h1>
+<!doctype html> 
+
+
+
+<html>
+        <meta charset="UTF-8">
+        
+<body>
+<h1>
+    
+     It works!
+    中文测试
+    很好，成功了
+
+</h1>
+
+
+  <div> 
+ <canvas id="can" width="400" height="400" style="background: Black"></canvas> 
+ <script> 
+ var sn = [ 42, 41 ], dz = 43, fx = 1, n, ctx = document.getElementById("can").getContext("2d"); 
+ function draw(t, c) { 
+  ctx.fillStyle = c; 
+  ctx.fillRect(t % 20 * 20 + 1, ~~(t / 20) * 20 + 1, 18, 18); 
+ } 
+ document.onkeydown = function(e) { 
+  fx = sn[1] - sn[0] == (n = [ -1, -20, 1, 20 ][(e || event).keyCode - 37] || fx) ? fx : n 
+ }; 
+ !function() { 
+  sn.unshift(n = sn[0] + fx); 
+  if (sn.indexOf(n, 1) > 0 || n<0||n>399 || fx == 1 && n % 20 == 0 || fx == -1 && n % 20 == 19) 
+  return alert("GAME OVER"); 
+  draw(n, "Lime"); 
+  if (n == dz) { 
+  while (sn.indexOf(dz = ~~(Math.random() * 400)) >= 0); 
+  draw(dz, "Yellow"); 
+  } else 
+  draw(sn.pop(), "Black"); 
+  setTimeout(arguments.callee, 130); 
+ }(); 
+ </script> 
+</div> 
+
+
+<br>
+<br>
+
+<div>
+
+
+<br>
+<h1>斗鱼直播</h1>
+<embed width="1200" height="800" allownetworking="all" allowscriptaccess="always" src="https://staticlive.douyucdn.cn/common/share/play.swf?room_id=252802" quality="high" bgcolor="#000" wmode="window" allowfullscreen="true"  allowFullScreenInteractive="true" type="application/x-shockwave-flash">
+</div>
+
+
+<br>
+<br>
+
+
+
+
+</body></html>
