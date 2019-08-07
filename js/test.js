@@ -6,4 +6,7 @@ function aaaaa(a,b,c) {
 
 $(function(){
     // alert('加载完了');
+    $('.ttt1').on("click", function(){
+        alert('别点沙雕');
+    });
 });
