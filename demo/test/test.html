@@ -23,11 +23,11 @@
         <div style="width:100%;height: 300px;">
 
 
-            <div id="test1" style="float:left;width:50%;height: 100%;background: #f0efee;">
+            <div id="div1" style="float:left;width:50%;height: 100%;background: #f0efee;">
                 {"name":"张三","age":18}
             </div>
 
-            <div style="float:left;width:50%;height: 100%;background: #d4d4d4;">
+            <div id="div2" style="float:left;width:50%;height: 100%;background: #d4d4d4;">
 
             </div>
 
@@ -36,7 +36,10 @@
 
 
         <div style="width:100%;height: 100px;">
-            <input value="test1" onclick="testUtil.test1()" type="button"/>
+            <input value="加密字符串显示到div1" onclick="testUtil.test1()" type="button"/>
+            <input value="div1解密成json到div2" onclick="testUtil.test2()" type="button"/>
+            <input value="json对象转成table显示到div3" onclick="testUtil.test3()" type="button"/>
+            <input value="table转json对象显示到div4" onclick="testUtil.test4()" type="button"/>
 
         </div>
 
@@ -44,11 +47,11 @@
         <div style="width:100%;height: 300px;">
 
 
-            <div style="float:left;width:50%;height: 100%;background: #f0efee;">
+            <div id="div3" style="float:left;width:50%;height: 100%;background: #f0efee;">
 
             </div>
 
-            <div style="float:left;width:50%;height: 100%;background: #d4d4d4;">
+            <div id="div4" style="float:left;width:50%;height: 100%;background: #d4d4d4;">
 
             </div>
 

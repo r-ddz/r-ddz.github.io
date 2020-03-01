@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面</title>
+
+    <!--  浏览器页签角标图片  -->
+    <link rel="shortcut icon"  href="../../lib/img/test.jpg" >
+
+    <link rel="stylesheet" href="css_CryptoJS.css"/>
+
+    <script type="text/javascript" src="../../lib/js/CryptoJS/components/core-min.js"></script>
+    <script type="text/javascript" src="../../lib/js/CryptoJS/rollups/aes.js"></script>
+    <script type="text/javascript" src="../../lib/js/CryptoJS/rollups/rabbit.js"></script>
+    <script type="text/javascript" src="../../lib/js/CryptoJS/rollups/rc4.js"></script>
+    <script type="text/javascript" src="../../lib/js/CryptoJS/rollups/tripledes.js"></script>
+
+    <script type="text/javascript" src="js_CryptoJS.js"></script>
+
+
+</head>
+<body>
+<div class="container">
+    <h1>前端加密控件CryptoJS的使用</h1>
+    <div><a href="https://github.com/brix/crypto-js" target="_blank">Github</a></div><br>
+
+    <div style="width:100%;">
+        秘钥
+        <div id="div0" contenteditable="true" style="width:100%;height: 100px;background: #d4d4d4;">测试秘钥</div><br>
+
+        <div style="width:100%;height: 500px;">
+
+            <div id="div1" contenteditable="true" style="float:left;width:24%;height: 100%;background: #d4d4d4;">
+                测试数据
+            </div>
+
+            <div id="div4" style="float:left;width:14%;height: 100%;background: #f0efee;">
+                <br><input value="加密 AES" onclick="testUtil.encrypt('AES')" type="button"/><br>
+                <br><input value="加密 DES" onclick="testUtil.encrypt('DES')" type="button"/><br>
+                <br><input value="加密 RC4" onclick="testUtil.encrypt('RC4')" type="button"/><br>
+                <br><input value="加密 Rabbit" onclick="testUtil.encrypt('Rabbit')" type="button"/><br>
+                <br><input value="加密 TripleDES" onclick="testUtil.encrypt('TripleDES')" type="button"/><br>
+            </div>
+
+            <div id="div2" contenteditable="true" style="float:left;width:24%;height: 100%;background: #d4d4d4;"></div>
+
+            <div id="div5" style="float:left;width:14%;height: 100%;background: #f0efee;">
+                <br><input value="解密 AES" onclick="testUtil.decrypt('AES')" type="button"/><br>
+                <br><input value="解密 DES" onclick="testUtil.decrypt('DES')" type="button"/><br>
+                <br><input value="解密 RC4" onclick="testUtil.decrypt('RC4')" type="button"/><br>
+                <br><input value="解密 Rabbit" onclick="testUtil.decrypt('Rabbit')" type="button"/><br>
+                <br><input value="解密 TripleDES" onclick="testUtil.decrypt('TripleDES')" type="button"/><br>
+            </div>
+
+            <div id="div3" contenteditable="true" style="float:left;width:24%;height: 100%;background: #d4d4d4;"></div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
